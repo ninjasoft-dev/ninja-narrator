@@ -19,7 +19,7 @@ if (-not $SkipInstall) {
 $mode = if ($OneFile) { "--onefile" } else { "--onedir" }
 $assetSeparator = [IO.Path]::PathSeparator
 $logoSource = Join-Path $projectRoot "ninja_narrator\assets"
-$logoTarget = "ninja_narrator${assetSeparator}assets"
+$logoTarget = "ninja_narrator\assets"
 
 $arguments = @(
     "-m", "PyInstaller", "--noconfirm", "--clean", "--windowed", $mode,

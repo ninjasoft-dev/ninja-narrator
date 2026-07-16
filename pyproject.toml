@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ninja-narrator"
-version = "1.0.0"
+version = "1.0.1"
 description = "Interface local e open source para narração com clonagem de voz por IA."
 readme = "README.md"
 requires-python = ">=3.10,<3.12"

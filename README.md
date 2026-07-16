@@ -67,6 +67,17 @@ Abra a interface:
 Na primeira geração, o Coqui TTS baixa os pesos do XTTS-v2. Esse processo exige
 internet e pode levar alguns minutos; as execuções seguintes usam o cache local.
 
+### Gerar o executável para Windows
+
+Depois da instalação, crie um pacote portátil com:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\build_gui.ps1 -SkipInstall
+```
+
+O resultado fica em `dist/NinjaNarrator/`. O bundle CUDA validado ocupa cerca de
+6,25 GiB, sem incluir os pesos do XTTS-v2 ou qualquer amostra de voz.
+
 ## Preparar uma voz
 
 1. Obtenha autorização expressa da pessoa cuja voz será usada.
